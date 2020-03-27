@@ -2,14 +2,17 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Be the Hero project backend part",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "author": "Jonas Freire",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon",
+    "test": "cross-env NODE_ENV=test jest"
   },
   "dependencies": {
+    "celebrate": "^12.0.1",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "knex": "^0.20.13",
     "sqlite3": "^4.1.1"
@@ -24,6 +27,8 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "nodemon": "^2.0.2",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.2",
+    "jest": "^25.2.3",
+    "supertest": "^4.0.2"
   }
 }
